@@ -1,0 +1,14 @@
+h1 {
+    color: blue;
+    font-size: 30px;
+    font-style: bold;
+  }  
+.my-class{
+  color:brown;
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+  background-color:burlywood;
+  width: 275px;
+  height: 50px;
+}

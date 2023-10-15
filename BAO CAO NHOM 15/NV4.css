@@ -1,0 +1,23 @@
+form {
+  width: 350px;
+  font-size: 20px;
+  color:rgb(255, 218, 196);
+  background-image:url(99fe4374a417fbbe7df431f60db145b8.jpg)
+  
+}
+.hoten{
+  display: flex;
+  padding: 16px;
+}
+.gioitinh{
+  display: flex;
+  padding: 16px;
+}
+.submit{
+  color: white;
+  font-size: 18px;
+  padding: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+

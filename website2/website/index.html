@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Store</title>
+    <!-- EMBED FONTS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- EMBED ICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- EMBED CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="grid">
+        <!-- Navigation -->
+        <nav class="header__navbar">
+          <ul class="header__navbar-list">
+            <li class="header__navbar-item">Trang chủ</li>
+            <li class="header__navbar-item">
+              Kết nối
+              <a href="" class="header__navbar-item-link">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="" class="header__navbar-item-link">
+                <i class="fa-brands fa-google"></i>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="header__navbar-list">
+            <li class="header__navbar-item header__navbar-item--has-notify">
+              <a href="" class="header__navbar-item-link">
+                <a href="" class="header__navbar-item-link">
+                  <i class="fa-solid fa-bell"></i>
+                </a>
+                Thông báo</a
+              >
+              <div class="header__notify">
+                <header class="header__notify-header">
+                  <h3>Thông báo mới nhận</h3>
+                </header>
+                <ul class="header__notify-list">
+                  <li class="header__notify-item header__notify-item--viewed">
+                    <a href="" class="header__notify-link">
+                      <img
+                        src="./assets/img/tatden.jpg"
+                        alt=""
+                        class="header__notify-img"
+                      />
+                      <div class="header__notify-info">
+                        <span class="header__notify-name">Tắt Đèn</span>
+                        <span class="header__notify-description">Tác phẩm Tắt Đèn của tác giả Ngô Tất Tố thuộc thể loại truyện tiểu thuyết, văn học Việt Nam</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="header__notify-item">
+                    <a href="" class="header__notify-link">
+                      <img
+                        src="./assets/img/2img.jpg"
+                        alt=""
+                        class="header__notify-img"
+                      />
+                      <div class="header__notify-info">
+                        <span class="header__notify-name"
+                          >Trường học hay trường đời</span
+                        >
+                        <span class="header__notify-description">Trường học hay trường đời" là tiêu đề cuốn sách mà nhà báo Nguyễn Tuấn Anh</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="header__notify-item">
+                    <a href="" class="header__notify-link">
+                      <img
+                        src="./assets/img/3img.jpg"
+                        alt=""
+                        class="header__notify-img"
+                      />
+                      <div class="header__notify-info">
+                        <span class="header__notify-name"
+                          >Công chúa ngủ trong lâu đài</span
+                        >
+                        <span class="header__notify-description">“Im lặng nào! Công chúa sẽ tỉnh dậy mất!”</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="header__notify-item">
+                    <a href="" class="header__notify-link">
+                      <img
+                        src="./assets/img/4img.jpg"
+                        alt=""
+                        class="header__notify-img"
+                      />
+                      <div class="header__notify-info">
+                        <span class="header__notify-name"
+                          >Mùa hè không tên</span
+                        >
+                        <span class="header__notify-description">“Đó là mùa hè thật đặc biệt với tôi. Sau mùa hè đó, cuộc sống của tôi đã thay đổi mãi mãi."</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="header__notify-item">
+                    <a href="" class="header__notify-link">
+                      <img
+                        src="./assets/img/5img.jpg"
+                        alt=""
+                        class="header__notify-img"
+                      />
+                      <div class="header__notify-info">
+                        <span class="header__notify-name"
+                          >Muôn kiếp nhân sinh</span
+                        >
+                        <span class="header__notify-description">"Lỡ như đây là kiếp trước, và chúng ta sẽ trở thành gì đó khác ở kiếp sau thì sao?...". </span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="header__navbar-item">
+              <button class="header__navbar-item-link" onclick="showSupport()">
+                <span class="header__navbar-item-link">
+                  <i class="fa-solid fa-phone"></i>
+                </span>
+                Trợ giúp
+              </button>
+            </li>
+            <li class="header__navbar-item header__navbar-item--strong">
+              <a href="./signup.php">Đăng ký</a>
+            </li>
+            <li class="header__navbar-item header__navbar-item--strong">
+              <a href="./signin.php">Đăng Nhập</a>
+            </li> 
+          </ul>
+        </nav>
+
+        <div class="header-with-search">
+          <a href="/" class="header__logo">
+            <img src="./assets/img/logo.jpg" alt="" class="img-logo" />
+            <span class="bookstore">BOOKSTORE</span>
+          </a>
+
+          <div class="header__search">
+            <input
+              type="text"
+              class="header__search-input"
+              placeholder="Tìm kiếm"
+            />
+            <button class="header__search-btn">
+              <i
+                class="header__search-btn-icon fa-solid fa-magnifying-glass"
+              ></i>
+            </button>
+          </div>
+          <!-- cart layout -->
+          <div class="header__cart">
+            <div class="header__cart-warp">
+              <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+              <div class="header__cart-list header__cart-list--no-cart">
+                <img
+                  src="./assets/img/trong.jpg"
+                  alt=""
+                  class="header__cart-list--no-cart-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main -->
+    <main>
+      <div class="app__container">
+        <div class="grid">
+          <div class="grid__row app__content">
+            <div class="grid__column-2">
+              <nav class="category">
+                <h3 class="category__heading">
+                  <i class="category__heading-icon fa-solid fa-list"></i>
+                  Danh mục
+                </h3>
+
+                <ul class="category__list">
+                  <li class="category-item category-item--active">
+                    <a href="#" class="category-item__link">Văn học</a>
+                  </li>
+                  <li class="category-item category-item--active">
+                    <a href="#" class="category-item__link">Kinh tế</a>
+                  </li>
+                  <li class="category-item category-item--active">
+                    <a href="#" class="category-item__link">Tiểu thyết</a>
+                  </li>
+                  <li class="category-item category-item--active">
+                    <a href="#" class="category-item__link">Sách thiếu nhi</a>
+                  </li>
+                  <li class="category-item category-item--active">
+                    <a href="#" class="category-item__link">Đời sống</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="grid__column-10">
+              <div class="home-filter">
+                <span class="home-filter__label">Sắp xếp theo</span>
+                <button class="home-filter__btn btn">Phổ biến</button>
+                <button class="home-filter__btn btn btn--primary">
+                  Mới nhất
+                </button>
+                <button class="home-filter__btn btn">Bán chạy</button>
+
+                <div class="select-input">
+                  <span class="select-input__label">Giá</span>
+                  <i class="select-input__icon fa-solid fa-chevron-down"></i>
+                  <ul class="select-input__list">
+                    <li class="select-input__item">
+                      <a href="" class="select-input__link">Giá thấp đến cao</a>
+                    </li>
+                    <li class="select-input__item">
+                      <a href="" class="select-input__link">Giá cao đến thấp</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="home-product">
+                <div class="grid__row">
+                  <!-- Item 1 -->
+                  <div class="grid__column-2-4">
+                    <!-- product-item -->
+                    <div class="homm-product-item">
+                      <img
+                        src="./assets/img/tatden.jpg"
+                        alt="Book"
+                        class="homm-product-img"
+                      />
+                      <h5 class="homm-product-item__name">Tắt Đèn</h5>
+                      <div class="homm-product-item__price">
+                        <span class="homm-product-item__price-old"
+                          >350.000</span
+                        >
+                        <span class="homm-product-item__price-present"
+                          >125.000</span
+                        >
+                      </div>
+                      <div class="homm-product-item__action">
+                        <span class="homm-product-item__like">
+                          <i class="fa-regular fa-thumbs-up"></i>
+                          <!-- <i class="fa-solid fa-thumbs-up"></i> -->
+                        </span>
+                        <div class="homm-product-item__rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                      <div class="homm-product-item__origin">
+                        <span class="homm-product-item__brand">NXB</span>
+                        <span class="homm-product-item__origin-name"
+                          >Kim Đồng</span
+                        >
+                      </div>
+                      <div class="homm-product-item__favorite">
+                        <i class="fa-solid fa-check"></i>
+                        Yêu thích
+                      </div>
+                      <div class="homm-product-item__sale-off">
+                        <span class="homm-product-item__salf-off-percent"
+                          >10%</span
+                        >
+                        <span class="homm-product-item__salf-off-label"
+                          >GIẢM<Menu:t></Menu:t
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item 2 -->
+                  <div class="grid__column-2-4">
+                    <!-- product-item -->
+                    <div class="homm-product-item">
+                      <img
+                        src="./assets/img/2img.jpg"
+                        alt="Book"
+                        class="homm-product-img"
+                      />
+                      <h5 class="homm-product-item__name">
+                        Trường học hay Trường đời
+                      </h5>
+                      <div class="homm-product-item__price">
+                        <span class="homm-product-item__price-old"
+                          >300.000</span
+                        >
+                        <span class="homm-product-item__price-present"
+                          >150.000</span
+                        >
+                      </div>
+                      <div class="homm-product-item__action">
+                        <span class="homm-product-item__like">
+                          <i class="fa-regular fa-thumbs-up"></i>
+                          <!-- <i class="fa-solid fa-thumbs-up"></i> -->
+                        </span>
+                        <div class="homm-product-item__rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                      <div class="homm-product-item__origin">
+                        <span class="homm-product-item__brand">NXB</span>
+                        <span class="homm-product-item__origin-name"
+                          >Giáo dục</span
+                        >
+                      </div>
+                      <div class="homm-product-item__favorite">
+                        <i class="fa-solid fa-check"></i>
+                        Yêu thích
+                      </div>
+                      <div class="homm-product-item__sale-off">
+                        <span class="homm-product-item__salf-off-percent"
+                          >50%</span
+                        >
+                        <span class="homm-product-item__salf-off-label"
+                          >GIẢM<Menu:t></Menu:t
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item 3 -->
+                  <div class="grid__column-2-4">
+                    <!-- product-item -->
+                    <div class="homm-product-item">
+                      <img
+                        src="./assets/img/3img.jpg"
+                        alt="Book"
+                        class="homm-product-img"
+                      />
+                      <h5 class="homm-product-item__name">Công chúa ngủ trong lâu đài</h5>
+                      <div class="homm-product-item__price">
+                        <span class="homm-product-item__price-old"
+                          >200.000</span
+                        >
+                        <span class="homm-product-item__price-present"
+                          >120.000</span
+                        >
+                      </div>
+                      <div class="homm-product-item__action">
+                        <span class="homm-product-item__like">
+                          <i class="fa-regular fa-thumbs-up"></i>
+                          <!-- <i class="fa-solid fa-thumbs-up"></i> -->
+                        </span>
+                        <div class="homm-product-item__rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                      <div class="homm-product-item__origin">
+                        <span class="homm-product-item__brand">NXB</span>
+                        <span class="homm-product-item__origin-name"
+                          >Kim Đồng</span
+                        >
+                      </div>
+                      <div class="homm-product-item__favorite">
+                        <i class="fa-solid fa-check"></i>
+                        Yêu thích
+                      </div>
+                      <div class="homm-product-item__sale-off">
+                        <span class="homm-product-item__salf-off-percent"
+                          >40%</span
+                        >
+                        <span class="homm-product-item__salf-off-label"
+                          >GIẢM<Menu:t></Menu:t
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item 4 -->
+                  <div class="grid__column-2-4">
+                    <!-- product-item -->
+                    <div class="homm-product-item">
+                      <img
+                        src="./assets/img/4img.jpg"
+                        alt="Book"
+                        class="homm-product-img"
+                      />
+                      <h5 class="homm-product-item__name">Mùa hè không tên</h5>
+                      <div class="homm-product-item__price">
+                        <span class="homm-product-item__price-old"
+                          >200.000</span
+                        >
+                        <span class="homm-product-item__price-present"
+                          >100.000</span
+                        >
+                      </div>
+                      <div class="homm-product-item__action">
+                        <span class="homm-product-item__like">
+                          <i class="fa-regular fa-thumbs-up"></i>
+                          <!-- <i class="fa-solid fa-thumbs-up"></i> -->
+                        </span>
+                        <div class="homm-product-item__rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                      <div class="homm-product-item__origin">
+                        <span class="homm-product-item__brand">NXB</span>
+                        <span class="homm-product-item__origin-name">Trẻ</span>
+                      </div>
+                      <div class="homm-product-item__favorite">
+                        <i class="fa-solid fa-check"></i>
+                        Yêu thích
+                      </div>
+                      <div class="homm-product-item__sale-off">
+                        <span class="homm-product-item__salf-off-percent"
+                          >50%</span
+                        >
+                        <span class="homm-product-item__salf-off-label"
+                          >GIẢM<Menu:t></Menu:t
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item 5 -->
+                  <div class="grid__column-2-4">
+                    <!-- product-item -->
+                    <div class="homm-product-item">
+                      <img
+                        src="./assets/img/5img.jpg"
+                        alt="Book"
+                        class="homm-product-img"
+                      />
+                      <h5 class="homm-product-item__name">
+                        Muôn Kiếp Nhân Sinh
+                      </h5>
+                      <div class="homm-product-item__price">
+                        <span class="homm-product-item__price-old"
+                          >350.000</span
+                        >
+                        <span class="homm-product-item__price-present"
+                          >125.000</span
+                        >
+                      </div>
+                      <div class="homm-product-item__action">
+                        <span class="homm-product-item__like">
+                          <i class="fa-regular fa-thumbs-up"></i>
+                          <!-- <i class="fa-solid fa-thumbs-up"></i> -->
+                        </span>
+                        <div class="homm-product-item__rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                      <div class="homm-product-item__origin">
+                        <span class="homm-product-item__brand">NXB</span>
+                        <span class="homm-product-item__origin-name"
+                          >First News</span
+                        >
+                      </div>
+                      <div class="homm-product-item__favorite">
+                        <i class="fa-solid fa-check"></i>
+                        Yêu thích
+                      </div>
+                      <div class="homm-product-item__sale-off">
+                        <span class="homm-product-item__salf-off-percent"
+                          >10%</span
+                        >
+                        <span class="homm-product-item__salf-off-label"
+                          >GIẢM<Menu:t></Menu:t
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item 1 -->
+                  <div class="grid__column-2-4">
+                    <!-- product-item -->
+                    <div class="homm-product-item">
+                      <img
+                        src="./assets/img/6img.jpg"
+                        alt="Book"
+                        class="homm-product-img"
+                      />
+                      <h5 class="homm-product-item__name">Nhóc Maruko - Tập 1</h5>
+                      <div class="homm-product-item__price">
+                        <span class="homm-product-item__price-old"
+                          >40.000</span
+                        >
+                        <span class="homm-product-item__price-present"
+                          >38.000</span
+                        >
+                      </div>
+                      <div class="homm-product-item__action">
+                        <span class="homm-product-item__like">
+                          <i class="fa-regular fa-thumbs-up"></i>
+                          <!-- <i class="fa-solid fa-thumbs-up"></i> -->
+                        </span>
+                        <div class="homm-product-item__rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                      <div class="homm-product-item__origin">
+                        <span class="homm-product-item__brand">NXB</span>
+                        <span class="homm-product-item__origin-name"
+                          >Kim Đồng</span
+                        >
+                      </div>
+                      <div class="homm-product-item__favorite">
+                        <i class="fa-solid fa-check"></i>
+                        Yêu thích
+                      </div>
+                      <div class="homm-product-item__sale-off">
+                        <span class="homm-product-item__salf-off-percent"
+                          >5%</span
+                        >
+                        <span class="homm-product-item__salf-off-label"
+                          >GIẢM<Menu:t></Menu:t
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item 2 -->
+                  <div class="grid__column-2-4">
+                    <!-- product-item -->
+                    <div class="homm-product-item">
+                      <img
+                        src="./assets/img/7img.jpg"
+                        alt="Book"
+                        class="homm-product-img"
+                      />
+                      <h5 class="homm-product-item__name">
+                        Thả trôi phiền muộn
+                      </h5>
+                      <div class="homm-product-item__price">
+                        <span class="homm-product-item__price-old"
+                          >110.000</span
+                        >
+                        <span class="homm-product-item__price-present"
+                          >60.000</span
+                        >
+                      </div>
+                      <div class="homm-product-item__action">
+                        <span class="homm-product-item__like">
+                          <i class="fa-regular fa-thumbs-up"></i>
+                          <!-- <i class="fa-solid fa-thumbs-up"></i> -->
+                        </span>
+                        <div class="homm-product-item__rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                      <div class="homm-product-item__origin">
+                        <span class="homm-product-item__brand">NXB</span>
+                        <span class="homm-product-item__origin-name"
+                          >Giáo dục</span
+                        >
+                      </div>
+                      <div class="homm-product-item__favorite">
+                        <i class="fa-solid fa-check"></i>
+                        Yêu thích
+                      </div>
+                      <div class="homm-product-item__sale-off">
+                        <span class="homm-product-item__salf-off-percent"
+                          >40%</span
+                        >
+                        <span class="homm-product-item__salf-off-label"
+                          >GIẢM<Menu:t></Menu:t
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item 3 -->
+                  <div class="grid__column-2-4">
+                    <!-- product-item -->
+                    <div class="homm-product-item">
+                      <img
+                        src="./assets/img/8img.jpg"
+                        alt="Book"
+                        class="homm-product-img"
+                      />
+                      <h5 class="homm-product-item__name">Hạ đỏ</h5>
+                      <div class="homm-product-item__price">
+                        <span class="homm-product-item__price-old"
+                          >530.000</span
+                        >
+                        <span class="homm-product-item__price-present"
+                          >477.000</span
+                        >
+                      </div>
+                      <div class="homm-product-item__action">
+                        <span class="homm-product-item__like">
+                          <i class="fa-regular fa-thumbs-up"></i>
+                          <!-- <i class="fa-solid fa-thumbs-up"></i> -->
+                        </span>
+                        <div class="homm-product-item__rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                      <div class="homm-product-item__origin">
+                        <span class="homm-product-item__brand">NXB</span>
+                        <span class="homm-product-item__origin-name"
+                          >Kim Đồng</span
+                        >
+                      </div>
+                      <div class="homm-product-item__favorite">
+                        <i class="fa-solid fa-check"></i>
+                        Yêu thích
+                      </div>
+                      <div class="homm-product-item__sale-off">
+                        <span class="homm-product-item__salf-off-percent"
+                          >%</span
+                        >
+                        <span class="homm-product-item__salf-off-label"
+                          >GIẢM<Menu:t></Menu:t
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item 4 -->
+                  <div class="grid__column-2-4">
+                    <!-- product-item -->
+                    <div class="homm-product-item">
+                      <img
+                        src="./assets/img/9img.jpg"
+                        alt="Book"
+                        class="homm-product-img"
+                      />
+                      <h5 class="homm-product-item__name">Trải nghiệm khách hàng xuất sắc</h5>
+                      <div class="homm-product-item__price">
+                        <span class="homm-product-item__price-old"
+                          >250.000</span
+                        >
+                        <span class="homm-product-item__price-present"
+                          >150.000</span
+                        >
+                      </div>
+                      <div class="homm-product-item__action">
+                        <span class="homm-product-item__like">
+                          <i class="fa-regular fa-thumbs-up"></i>
+                          <!-- <i class="fa-solid fa-thumbs-up"></i> -->
+                        </span>
+                        <div class="homm-product-item__rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                      <div class="homm-product-item__origin">
+                        <span class="homm-product-item__brand">NXB</span>
+                        <span class="homm-product-item__origin-name">Trẻ</span>
+                      </div>
+                      <div class="homm-product-item__favorite">
+                        <i class="fa-solid fa-check"></i>
+                        Yêu thích
+                      </div>
+                      <div class="homm-product-item__sale-off">
+                        <span class="homm-product-item__salf-off-percent"
+                          >40%</span
+                        >
+                        <span class="homm-product-item__salf-off-label"
+                          >GIẢM<Menu:t></Menu:t
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item 5 -->
+                  <div class="grid__column-2-4">
+                    <!-- product-item -->
+                    <div class="homm-product-item">
+                      <img
+                        src="./assets/img/10img.jpg"
+                        alt="Book"
+                        class="homm-product-img"
+                      />
+                      <h5 class="homm-product-item__name">
+                        Tuổi thơ dữ dội
+                      </h5>
+                      <div class="homm-product-item__price">
+                        <span class="homm-product-item__price-old"
+                          >100.000</span
+                        >
+                        <span class="homm-product-item__price-present"
+                          >80.000</span
+                        >
+                      </div>
+                      <div class="homm-product-item__action">
+                        <span class="homm-product-item__like">
+                          <i class="fa-regular fa-thumbs-up"></i>
+                          <!-- <i class="fa-solid fa-thumbs-up"></i> -->
+                        </span>
+                        <div class="homm-product-item__rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                      <div class="homm-product-item__origin">
+                        <span class="homm-product-item__brand">NXB</span>
+                        <span class="homm-product-item__origin-name"
+                          >First News</span
+                        >
+                      </div>
+                      <div class="homm-product-item__favorite">
+                        <i class="fa-solid fa-check"></i>
+                        Yêu thích
+                      </div>
+                      <div class="homm-product-item__sale-off">
+                        <span class="homm-product-item__salf-off-percent"
+                          >20%</span
+                        >
+                        <span class="homm-product-item__salf-off-label"
+                          >GIẢM<Menu:t></Menu:t
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Toast Help  -->
+      <div class="toast-help">
+        <div class="toast-help-inner">
+          <h3 class="toast__title">Chọn sách để được tư vấn và hỗ trợ</h3>
+          <a href="#!" class="toast-close js-toast-close">
+            <i class="fa-solid fa-xmark fa-xl"></i>
+          </a>
+          <div class="toast__list">
+            <!-- Item 1 -->
+            <article class="toast__item">
+              <i class="fa-solid fa-book"></i>
+              <span class="toast__book">Sách Thiếu Nhi</span>
+            </article>
+            <!-- Item 1 -->
+            <article class="toast__item">
+              <i class="fa-solid fa-book"></i>
+              <span class="toast__book">Sách Tình Yêu</span>
+            </article>
+            <!-- Item 2 -->
+            <article class="toast__item">
+              <i class="fa-solid fa-book"></i>
+              <span class="toast__book">Sách Trinh Thám</span>
+            </article>
+            <!-- Item 3 -->
+            <article class="toast__item">
+              <i class="fa-solid fa-book"></i>
+              <span class="toast__book">Sách Văn Học</span>
+            </article>
+            <!-- Item 4 -->
+            <article class="toast__item">
+              <i class="fa-solid fa-book"></i>
+              <span class="toast__book">Sách Giáo Khoa</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <div id="footer">
+      <div class="span12">
+        <div class="row">
+          <div class="footer-left">
+            <div class="span4">
+              <div class="wysiwyg-content">
+                <span class="title">Về Công Ty</span>
+                <ul>
+                  <li>
+                    <a href="">Giới thiệu</a>
+                  </li>
+                  <li>
+                    <a href="">Tuyển dụng</a>
+                  </li>
+                  <li>
+                    <a href="">Góc báo chí</a>
+                  </li>
+                  <li>
+                    <a href="">Chương trình đại lý</a>
+                  </li>
+                  <!-- <li><a href="https://www.vinabook.com/so-do-website.html">Sơ đồ Website</a></li> -->
+                  <li>
+                    <a href="">Chính sách bảo mật</a>
+                  </li>
+                  <li>
+                    <a href="">Chính sách đổi trả</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="span4">
+              <div class="wysiwyg-content">
+                <span class="title">Trợ giúp</span>
+                <ul>
+                  <li>
+                    <a href="">Quy định sử dụng</a>
+                  </li>
+                  <li>
+                    <a href="">Hướng dẫn mua hàng</a>
+                  </li>
+                  <li>
+                    <a href="">Phương thức thanh toán</a>
+                  </li>
+                  <li>
+                    <a href="">Phương thức vận chuyển</a>
+                  </li>
+                  <li><a href="/support/">Các câu hỏi thường gặp</a></li>
+                  <li>
+                    <a href="">Ứng dụng đọc ebook</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-right">
+              <div class="wysiwyg-content">
+                <span class="title">Tải ứng dụng trên điện thoại</span>
+                <figure class="logo-app">
+                  <span>
+                    <a target="_blank" href="" rel="nofollow">
+                      <img
+                        src="https://www.vinabook.com/images/mobile/icon-appstore.png"
+                      />
+                    </a>
+                  </span>
+                  <span>
+                    <a target="_blank" href="" rel="nofollow">
+                      <img
+                        src="https://www.vinabook.com/images/mobile/icon-googleplay.png"
+                      />
+                    </a>
+                  </span>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="span7">
+            <div class="span4">
+              <div class="wysiwyg-content">
+                <span class="title">CHẤP NHẬN THANH TOÁN</span>
+                <ul>
+                  <li>
+                    <figure class="icon-payment">
+                      <img src="./assets/img/visa.jpg" width="55" height="38" />
+                      <img
+                        src="./assets/img/master_card.jpg"
+                        width="55"
+                        height="38"
+                      />
+                      <img src="./assets/img/jcb.jpg" width="55" height="38" />
+                      <img src="./assets/img/atm.jpg" width="55" height="38" />
+                      <img src="./assets/img/cod.jpg" width="55" height="38" />
+                      <img
+                        src="./assets/img/payoo.jpg"
+                        width="55"
+                        height="38"
+                      />
+                    </figure>
+                  </li>
+                </ul>
+                <span class="title">THANH TOÁN AN TOÀN</span>
+                <ul>
+                  <li>
+                    <figure class="icon-payment">
+                      <img
+                        src="./assets/img/verify_visa.jpg"
+                        width="55"
+                        height="38"
+                      />
+                      <img
+                        src="./assets/img/mastercard_securecode.jpg"
+                        width="55"
+                        height="38"
+                      />
+                      <img
+                        src="./assets/img/onepay.jpg"
+                        width="55"
+                        height="38"
+                      />
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="span4">
+              <div class="wysiwyg-content">
+                <span class="title">ĐỐI TÁC VẬN CHUYỂN</span>
+                <ul>
+                  <li>
+                    <figure class="logo-shiper">
+                      <img
+                        src="./assets/img/vn-post.jpg"
+                        width="184"
+                        height="44"
+                      />
+                      <img src="./assets/img/dhl.jpg" width="184" height="30" />
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="span4">
+              <div class="wysiwyg-content">
+                <span class="title">ĐỐI TÁC BÁN HÀNG</span>
+                <ul>
+                  <li>
+                    <figure class="logo-shiper">
+                      <img
+                        src="./assets/img/lazada.jpg"
+                        width="115"
+                        height="41"
+                      />
+                      <img
+                        src="./assets/img/shopee.jpg"
+                        width="115"
+                        height="38"
+                      />
+                      <img
+                        src="./assets/img/amazon.jpg"
+                        width="115"
+                        height="35"
+                      />
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- sign -->
+    <!-- <div class="modal">
+    <div class="modal__overlay"></div>
+
+    <div class="modal__body">
+        <div class="modal__inner"> -->
+    <!-- Register form -->
+    <!-- <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__swith-btn">Đăng nhập</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                    </div>
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                            Bằng việc đăng ký, bạn đã đồng ý với BookStore về
+                            <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a>
+                            <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+    
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls-back">Back</button>
+                        <button class="btn btn--primary">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+
+                
+
+                <div class="auth-form__socials">
+                    <a href="" class="btn btn--size-s btn--with-icon">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        Kết nối với Facebook
+                    </a>
+                    <a href="" class="btn btn--size-s btn--with-icon">
+                        <i class="fa-brands fa-google"></i>
+                        Đăng nhập bằng Google
+                    </a>
+                </div>
+            </div> -->
+
+    <!-- Login form -->
+    <!-- <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__swith-btn">Đăng ký</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu">
+                        </div>
+                        
+                    </div>
+
+                   <div class="auth-form__aside">
+                    <div class="auth-form__help">
+                        <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                        <span class="auth-form__separate"></span>
+                        <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                    </div>
+                   </div>
+    
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls-back">Back</button>
+                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+
+                
+
+                <div class="auth-form__socials">
+                    <a href="" class="btn btn--size-s btn--with-icon">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        Facebook
+                    </a>
+                    <a href="" class="btn btn--size-s btn--with-icon">
+                        <i class="fa-brands fa-google"></i>
+                        Google
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
